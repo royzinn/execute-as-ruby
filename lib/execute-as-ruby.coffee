@@ -13,12 +13,12 @@ module.exports =
                 line = cursor.getCurrentBufferLine()
                 @runRuby(line, (result) ->
                     editor.moveToEndOfLine()
-                    editor.insertText("\n" + result))
+                    editor.insertText("\n# =>" + result))
             else
                 range = editor.getSelectedBufferRange()
                 @runRuby(selection, (result) ->
                     editor.setCursorBufferPosition(range.end)
-                    editor.insertText(" " + result))
+                    editor.insertText("\n # => result \n" + result))
 
     packagePath: ->
         packagePath = null
