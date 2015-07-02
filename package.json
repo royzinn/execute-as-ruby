@@ -7,7 +7,7 @@
   "activationCommands": {
     "atom-text-editor": "execute-as-ruby:execute"
   },
-  "repository": "https://github.com/torsten/execute-as-ruby",
+  "repository": "https://github.com/royzinn/execute-as-ruby",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0"
